@@ -1,21 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ttr_gruppo1;
 
-/**
- *
- * @author 4ib
- */
+
 public class TTR_Gruppo1 {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+      
+        //110 carte Treno: 12 di ogni colore: Viola, Bianco, Blu, Giallo, Arancio, Nero, Rosso e Verde, più 14 Locomotive
+        
     }
     
 }
