@@ -53,7 +53,7 @@ public class Carta {
     }
 
     public String isJolly() {
-        if(jolly=true)
+        if(jolly==true)
         return "jolly";
         else return "non è un jolly";
     }
