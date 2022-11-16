@@ -1,3 +1,4 @@
+package ttr_gruppo1;
 
 public class Tabellone {
     
