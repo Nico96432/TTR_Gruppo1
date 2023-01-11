@@ -2,22 +2,20 @@
 package ttr_gruppo1;
 
 
-public class CartaObiettivo extends Carta {
+public class CartaObiettivo extends Sprite{
     
    private String partenza;
    private String arrivo;
    private int punteggio;
-   
-   
-    
-
 
 public CartaObiettivo(){
-
+    super(50,50);
+    loadImage("cartaObiettivo.png");
 }
 
 public CartaObiettivo(String partenza,String arrivo,int punteggio){ 
-    
+    super(50,50);
+    loadImage("cartaObiettivo.png");
     this.partenza=partenza;
     this.arrivo=arrivo;
     this.punteggio=punteggio;
