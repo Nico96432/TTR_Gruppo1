@@ -12,9 +12,10 @@ import javax.swing.JFrame;
  * @author 4ib
  */
 public class UI_Caravello extends javax.swing.JFrame {
+    
+    private Contenuto_Grafico cg;
 
-   private CartaObiettivo[] carteObiettivo;
-   private CartaTreno[] carteTreno;
+   
     public UI_Caravello() {
         initComponents();
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -51,15 +52,8 @@ public class UI_Caravello extends javax.swing.JFrame {
         CartaObiettivo o30=new CartaObiettivo("Montreal","New Orleans",13);
         
         
-        
-        for(int i=0;i<12;i++){
-            carteTreno[i]=new CartaTreno("rosa",false);
-        }
-        
-        for(int i=0;i>12 && i<24;i++){
-            carteTreno[i]=new CartaTreno("verdi",false);
-        }
-        
+        cg = new Contenuto_Grafico();
+        getContentPane().add(cg);
 
     }
 
