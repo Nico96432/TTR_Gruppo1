@@ -5,15 +5,62 @@
  */
 package ttr_gruppo1;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author 4ib
  */
 public class UI_Caravello extends javax.swing.JFrame {
 
-   
+   private CartaObiettivo[] carteObiettivo;
+   private CartaTreno[] carteTreno;
     public UI_Caravello() {
         initComponents();
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        
+        CartaObiettivo o1=new CartaObiettivo("Denver","Pittsburgh",11);
+        CartaObiettivo o2=new CartaObiettivo("Winnipeg","Houston",12);
+        CartaObiettivo o3=new CartaObiettivo("Chicago","Santa Fe ",9);
+        CartaObiettivo o4=new CartaObiettivo("Duluth","ElPaso", 10);
+        CartaObiettivo o5=new CartaObiettivo("Sault San.Marie","Oklahoma City", 9);
+        CartaObiettivo o6=new CartaObiettivo("Calgary","Phoenix",13);
+        CartaObiettivo o7=new CartaObiettivo("Los Angeles","New York",21);
+        CartaObiettivo o8=new CartaObiettivo("Seattle","New York",22);
+        CartaObiettivo o9=new CartaObiettivo("Vancouver","Montreal",20);
+        CartaObiettivo o10=new CartaObiettivo("Boston","Miami",12);
+        CartaObiettivo o11=new CartaObiettivo("Sault St.Marie","Nashville",8);
+        CartaObiettivo o12=new CartaObiettivo("Kansas City","Houston",5);
+        CartaObiettivo o13=new CartaObiettivo("Toronto","Miami",10);
+        CartaObiettivo o14=new CartaObiettivo("Chicago","New Orleans",7);
+        CartaObiettivo o15=new CartaObiettivo("Duluth","Houston",8);
+        CartaObiettivo o16=new CartaObiettivo("Dallas","New York",11);
+        CartaObiettivo o17=new CartaObiettivo("Winnipeg","Little Rock",11);
+        CartaObiettivo o18=new CartaObiettivo("Denver","El Paso",4);
+        CartaObiettivo o19=new CartaObiettivo("Portland","Phoenix",11);
+        CartaObiettivo o20=new CartaObiettivo("Helena","Los Angeles",8);
+        CartaObiettivo o21=new CartaObiettivo("New York","Atlanta",6);
+        CartaObiettivo o22=new CartaObiettivo("Montreal","Atlanta",9);
+        CartaObiettivo o23=new CartaObiettivo("Portland","Nashville",17);
+        CartaObiettivo o24=new CartaObiettivo("Seattle","Los Angeles",9);
+        CartaObiettivo o25=new CartaObiettivo("Vancouver","Santa Fe",13);
+        CartaObiettivo o26=new CartaObiettivo("Calgary","Salt Lake City",7);
+        CartaObiettivo o27=new CartaObiettivo("Los Angeles","Chicago",16);
+        CartaObiettivo o28=new CartaObiettivo("Los Angeles","Miami",20);
+        CartaObiettivo o29=new CartaObiettivo("San Francisco","Atlanta",17);
+        CartaObiettivo o30=new CartaObiettivo("Montreal","New Orleans",13);
+        
+        
+        
+        for(int i=0;i<12;i++){
+            carteTreno[i]=new CartaTreno("rosa",false);
+        }
+        
+        for(int i=0;i>12 && i<24;i++){
+            carteTreno[i]=new CartaTreno("verdi",false);
+        }
+        
+
     }
 
     /**
@@ -25,17 +72,106 @@ public class UI_Caravello extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jProgressBar3 = new javax.swing.JProgressBar();
+        Sotto = new javax.swing.JPanel();
+        tabelloneG = new javax.swing.JPanel();
+        ComputerR = new javax.swing.JPanel();
+        GiocatoreV = new javax.swing.JPanel();
+        MercatoB = new javax.swing.JPanel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        Sotto.setPreferredSize(new java.awt.Dimension(691, 700));
+
+        tabelloneG.setBackground(new java.awt.Color(255, 255, 0));
+
+        javax.swing.GroupLayout tabelloneGLayout = new javax.swing.GroupLayout(tabelloneG);
+        tabelloneG.setLayout(tabelloneGLayout);
+        tabelloneGLayout.setHorizontalGroup(
+            tabelloneGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        tabelloneGLayout.setVerticalGroup(
+            tabelloneGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        ComputerR.setBackground(new java.awt.Color(255, 51, 51));
+
+        javax.swing.GroupLayout ComputerRLayout = new javax.swing.GroupLayout(ComputerR);
+        ComputerR.setLayout(ComputerRLayout);
+        ComputerRLayout.setHorizontalGroup(
+            ComputerRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 670, Short.MAX_VALUE)
+        );
+        ComputerRLayout.setVerticalGroup(
+            ComputerRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 82, Short.MAX_VALUE)
+        );
+
+        GiocatoreV.setBackground(new java.awt.Color(51, 255, 51));
+
+        javax.swing.GroupLayout GiocatoreVLayout = new javax.swing.GroupLayout(GiocatoreV);
+        GiocatoreV.setLayout(GiocatoreVLayout);
+        GiocatoreVLayout.setHorizontalGroup(
+            GiocatoreVLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 672, Short.MAX_VALUE)
+        );
+        GiocatoreVLayout.setVerticalGroup(
+            GiocatoreVLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 77, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout SottoLayout = new javax.swing.GroupLayout(Sotto);
+        Sotto.setLayout(SottoLayout);
+        SottoLayout.setHorizontalGroup(
+            SottoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(GiocatoreV, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(tabelloneG, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(SottoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(ComputerR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        SottoLayout.setVerticalGroup(
+            SottoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SottoLayout.createSequentialGroup()
+                .addGap(85, 85, 85)
+                .addComponent(tabelloneG, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(GiocatoreV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(SottoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(SottoLayout.createSequentialGroup()
+                    .addComponent(ComputerR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 405, Short.MAX_VALUE)))
+        );
+
+        tabelloneG.getAccessibleContext().setAccessibleName("");
+
+        MercatoB.setBackground(new java.awt.Color(0, 255, 204));
+
+        javax.swing.GroupLayout MercatoBLayout = new javax.swing.GroupLayout(MercatoB);
+        MercatoB.setLayout(MercatoBLayout);
+        MercatoBLayout.setHorizontalGroup(
+            MercatoBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 110, Short.MAX_VALUE)
+        );
+        MercatoBLayout.setVerticalGroup(
+            MercatoBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 487, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(Sotto, javax.swing.GroupLayout.DEFAULT_SIZE, 672, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(MercatoB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(MercatoB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Sotto, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
         );
 
         pack();
@@ -77,5 +213,11 @@ public class UI_Caravello extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel ComputerR;
+    private javax.swing.JPanel GiocatoreV;
+    private javax.swing.JPanel MercatoB;
+    private javax.swing.JPanel Sotto;
+    private javax.swing.JProgressBar jProgressBar3;
+    private javax.swing.JPanel tabelloneG;
     // End of variables declaration//GEN-END:variables
 }
