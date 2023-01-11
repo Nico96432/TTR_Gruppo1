@@ -2,7 +2,7 @@
 package ttr_gruppo1;
 
 
-public class CartaObiettivo  {
+public class CartaObiettivo extends Carta {
     
    private String partenza;
    private String arrivo;
