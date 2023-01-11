@@ -1,13 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ttr_gruppo1;
 
-/**
- *
- * @author 4ib
- */
-public class CartaTreno {
+public class CartaTreno extends Sprite{
+    private String colore;
+
+    public CartaTreno() {
+        super(20,20);
+        loadImage("Treno.png");
+    }
+
+    public CartaTreno(String colore) {
+        super(20,20);
+        loadImage("Treno.png");
+        this.colore = colore;
+    }
+
+    public String getColore() {
+        return colore;
+    }
+
+    public void setColore(String colore) {
+        this.colore = colore;
+    }
     
 }

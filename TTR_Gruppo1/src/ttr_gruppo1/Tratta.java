@@ -1,17 +1,22 @@
    
 package ttr_gruppo1;
 
-public class Tratta {
+public class Tratta extends Sprite{
     private int lunghezza;
     private String colore;
     private String inizio;
     private String fine;
     private boolean occupata;
     
-    public Tratta(){}
+    public Tratta(){
+        super(20,20);
+        loadImage("Tratta.png");
+    }
     
     public Tratta(int lunghezza,String colore,String inizio,String fine,boolean occupata)
     {
+        super(20,20);
+        loadImage("Tratta.png");
         this.lunghezza=lunghezza;
         this.colore=colore;
         this.inizio=inizio;

@@ -1,13 +1,12 @@
 package ttr_gruppo1;
 
 
-public class Tabellone {
+public class Tabellone{
     
     private Stazione[] stazioni;
     private Tratta[] tratte;
 
     public Tabellone() {
-        
 Stazione s1= new Stazione("Vancouver") ;
 Stazione s2= new Stazione("Seattle") ;
 Stazione s3= new Stazione("Portland") ;

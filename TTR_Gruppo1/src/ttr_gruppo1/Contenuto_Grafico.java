@@ -51,6 +51,12 @@ public class Contenuto_Grafico extends JPanel implements ActionListener{
         
         g2d.drawImage(TTR_Gruppo1.mazzoTreni.getImage(), TTR_Gruppo1.mazzoTreni.getX(), 
             TTR_Gruppo1.mazzoTreni.getY(), this);
+        
+        g2d.drawImage(TTR_Gruppo1.mazzoTreni.getImage(), TTR_Gruppo1.mazzoTreni.getX(), 
+            TTR_Gruppo1.mazzoTreni.getY(), this);
+        
+        g2d.drawImage(TTR_Gruppo1.mazzoTreni.getImage(), TTR_Gruppo1.mazzoTreni.getX(), 
+            TTR_Gruppo1.mazzoTreni.getY(), this);
     }
     
     @Override
@@ -70,7 +76,7 @@ public class Contenuto_Grafico extends JPanel implements ActionListener{
     private class TAdapter extends MouseAdapter {
 
         @Override
-        public void mouseReleased(MouseEvent e) {
+        public void mouseClicked(MouseEvent e) {
             //spaceShip.keyReleased(e);
         }
     }
