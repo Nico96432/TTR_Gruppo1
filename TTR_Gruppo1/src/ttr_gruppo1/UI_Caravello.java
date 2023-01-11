@@ -12,6 +12,8 @@ import javax.swing.JFrame;
  * @author 4ib
  */
 public class UI_Caravello extends javax.swing.JFrame {
+    
+    private Contenuto_Grafico cg;
 
    
     public UI_Caravello() {
@@ -50,7 +52,8 @@ public class UI_Caravello extends javax.swing.JFrame {
         CartaObiettivo o30=new CartaObiettivo("Montreal","New Orleans",13);
         
         
-        
+        cg = new Contenuto_Grafico();
+        getContentPane().add(cg);
 
     }
 

@@ -8,6 +8,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.net.URL;
+import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
@@ -42,6 +46,18 @@ public class Contenuto_Grafico extends JPanel implements ActionListener{
         Toolkit.getDefaultToolkit().sync();
     }
     
+    private BufferedImage loadImage(){
+        URL imagePath = getClass().getResource("immagini/board.png");
+        BufferedImage result = null;
+        try {
+            result = ImageIO.read(imagePath);
+        } catch (IOException e) {
+            System.err.println("Errore, immagine non trovata");
+        }
+
+        return result;
+    }
+    
     private void doDrawing(Graphics g) {
         
         Graphics2D g2d = (Graphics2D) g;
@@ -57,6 +73,7 @@ public class Contenuto_Grafico extends JPanel implements ActionListener{
         
         g2d.drawImage(TTR_Gruppo1.mazzoTreni.getImage(), TTR_Gruppo1.mazzoTreni.getX(), 
             TTR_Gruppo1.mazzoTreni.getY(), this);
+        g2d.drawImage(loadImage(),0,0,this);
     }
     
     @Override
