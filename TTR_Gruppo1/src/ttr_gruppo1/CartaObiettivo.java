@@ -9,13 +9,13 @@ public class CartaObiettivo extends Sprite{
    private int punteggio;
 
 public CartaObiettivo(){
-    super(50,50);
-    loadImage("cartaObiettivo.png");
+    super(50,50);/*
+    loadImage("cartaObiettivo.png");*/
 }
 
 public CartaObiettivo(String partenza,String arrivo,int punteggio){ 
-    super(50,50);
-    loadImage("cartaObiettivo.png");
+    super(50,50);/*
+    loadImage("cartaObiettivo.png");*/
     this.partenza=partenza;
     this.arrivo=arrivo;
     this.punteggio=punteggio;

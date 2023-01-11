@@ -9,14 +9,14 @@ public class Tratta extends Sprite{
     private boolean occupata;
     
     public Tratta(){
-        super(20,20);
-        loadImage("Tratta.png");
+        super(20,20);/*
+        loadImage("Tratta.png");*/
     }
     
     public Tratta(int lunghezza,String colore,String inizio,String fine,boolean occupata)
     {
-        super(20,20);
-        loadImage("Tratta.png");
+        super(20,20);/*
+        loadImage("Tratta.png");*/
         this.lunghezza=lunghezza;
         this.colore=colore;
         this.inizio=inizio;

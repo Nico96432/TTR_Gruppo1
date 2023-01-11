@@ -7,13 +7,13 @@ public class Stazione extends Sprite {
     
   
    public Stazione(){
-    super(20,20);
-        loadImage("Stazzione.png");
+    super(20,20);/*
+        loadImage("Stazzione.png");*/
 }
 
     public Stazione(String città) {
-        super(20,20);
-        loadImage("Stazzione.png");
+        super(20,20);/*
+        loadImage("Stazzione.png");*/
         this.città = città;
     }
    

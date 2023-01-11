@@ -35,6 +35,9 @@ public class Contenuto_Grafico extends JPanel implements ActionListener{
 
         timer = new Timer(DELAY, this);
         timer.start();
+        
+        setSize(1100,749);
+        setLocation(230,0);
     }
 
     @Override
@@ -62,7 +65,7 @@ public class Contenuto_Grafico extends JPanel implements ActionListener{
         
         Graphics2D g2d = (Graphics2D) g;
 
-        g2d.drawImage(TTR_Gruppo1.mazzoObiettivi.getImage(), TTR_Gruppo1.mazzoObiettivi.getX(), 
+      g2d.drawImage(TTR_Gruppo1.mazzoObiettivi.getImage(), TTR_Gruppo1.mazzoObiettivi.getX(), 
             TTR_Gruppo1.mazzoObiettivi.getY(), this);
         
         g2d.drawImage(TTR_Gruppo1.mazzoTreni.getImage(), TTR_Gruppo1.mazzoTreni.getX(), 
@@ -73,6 +76,7 @@ public class Contenuto_Grafico extends JPanel implements ActionListener{
         
         g2d.drawImage(TTR_Gruppo1.mazzoTreni.getImage(), TTR_Gruppo1.mazzoTreni.getX(), 
             TTR_Gruppo1.mazzoTreni.getY(), this);
+        
         g2d.drawImage(loadImage(),0,0,this);
     }
     
